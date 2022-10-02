@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 90px 0;
+    font-family: 'Segoe UI Light';
+}
+.navheader {
+    height: 100px;
+    background-color: #1a2b4f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbox {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1292px;
+}
+.navlogo, .navmenuitem a {
+    color: #2bcac8;
+    text-decoration: none;
+}
+.navlogo {
+    background-color: #dfc3ff;
+    margin: 10px 10px;
+    color: #000011;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
+.navmenu {
+    margin-right: 40px;
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+.navmenuitem {
+    width: max-content;
+    margin: 0 10px;
+    font-size: 18px;
+    line-height: 80px;
+}
+.navmenuitem a {
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.navmenuitem a:hover {
+    background-color: #092130;
+    transition: 0.5s;
+}
+.navtoggle {
+    height: 60px;
+    padding: 10px 20px;
+    line-height: 60px;
+    background: none;
+    border: none;
+    display: none;
+}
+.navtoggle svg {
+    width: 30px;
+    height: 30px;
+}
+path {
+    fill: #2bcac8 !important;
+}
+@media screen and (max-width: 872px) {
+    body {
+        padding: 30px;
+    }
+    .navheader {
+        height: 70px;
+    }
+    .navbox {
+        margin-left: 20px;
+    }
+    .navlogo {
+        margin: 10px 0;
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .navmenu {
+        width: 100%;
+        padding: 20px 0;
+        align-items: center;
+        margin-right: 20px;
+        flex-direction: column;
+        background-color: #1d688d;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .navmenuitem {
+        height: 60px;
+        line-height: 60px;
+    }
+    .navmenuitem a:hover {
+        background: none;
+        color: #123d5a;
+    }
+    .navtoggle {
+        display: block;
+    }
+    .navmenuvisible {
+        left: 0;
+    }
+    .navtoggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}

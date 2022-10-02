@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back {
+    width: 340px;
+    height: 440px;
+    background-color: #1a2b4f;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Ebrima;
+    display: block;
+    border-radius: 35px;
+}
+.back tr td button {
+    width: 70px;
+    height: 70px;
+    background-color: #8c8cef;
+    margin: 0.5px;
+    font-size: 30px;
+    font-family: Gadugi;
+    border-radius: 13px;
+    border: none;
+}
+.back tr td button:hover {
+    background-color: #4a5899;
+}
+#result {
+    width: 100%;
+    height: 80px;
+    background-color: #dfc3ff;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 15px;
+    display: block;
+    overflow-y: scroll;
+    max-width: 290px;
+}
+@media screen and (max-width: 768px) {
+    .back {
+        width: 255px;
+        height: 360px;
+    }
+    .back tr td button {
+        width:50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
